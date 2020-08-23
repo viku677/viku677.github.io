@@ -42,6 +42,33 @@
       ;
       color: black;
     }
+    .btnSubmit
+            {
+                width: 50%;
+                border-radius: 1rem;
+                padding: 1.5%;
+                color: #fff;
+                background-color: rgb(255, 0, 191);
+                border: none;
+                cursor: pointer;
+                margin-right: 6%;
+                color: black;
+                margin-top: 4%;
+            }
+            .Submit
+            {
+                width: 50%;
+                border-radius: 1rem;
+                padding: 1.5%;
+                color: #fff;
+                background-color: white;
+                border: none;
+                cursor: pointer;
+                margin-right: 6%;
+                color: white;
+                margin-top: 4%;
+            }
+    
     
     </style>
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
@@ -53,23 +80,24 @@
 
       
  
-  <iframe width="1200" height="300" src="https://datastudio.google.com/embed/reporting/c2e195d6-cf47-4312-96b0-58ad6d68a9da/page/SPYZB" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe width="600" height="300" src="https://datastudio.google.com/embed/reporting/c2e195d6-cf47-4312-96b0-58ad6d68a9da/page/SPYZB" frameborder="0" style="border:0" allowfullscreen></iframe>
   
                        
   <form method="post" autocomplete="off" name="symptoms new">
                                         <h1 >Consultation sheet</h1>
-                                        <br>
+                                        
                                         
                                         <fieldset data-role="collapsible" >
 
                                           <legend>Bill no</legend>
                                         <input type="text" name="Bill no" placeholder="bill no">
                                         </fieldset>
-                                        <br>
                                         
-                                        <fieldset data-role="collapsible">
+                                        
+                                        <fieldset data-role="collapsible"  >
                                           <legend>Symptoms </legend>
-                                         
+                                          <fieldset data-role="collapsible"  >
+                                            <legend>Symptoms </legend>
                                           <input list="symptoms" name="symptom 1" placeholder="symptom ">
                                         <datalist id="symptoms">
                                             <option value="Abnormal behaviour" >
@@ -235,10 +263,11 @@
                                                 <option value="Few hours"> 
                                           </datalist>
                                           <input type="text" name="extra notes 1" placeholder="extra notes... ">
-                                        
+                                          
                                           <br>
                                           
-                                          
+                                          <fieldset data-role="collapsible" >
+                                            <legend>Symptoms </legend>
                                           <input list="symptoms" name="symptom 2" placeholder="symptom ">
                                               <datalist id="symptoms">
                                                 <option value="Abnormal behaviour">
@@ -404,9 +433,10 @@
                                               <option value="Few hours"> 
                                             </datalist>
                                             <input type="text" name="extra notes 2" placeholder="extra notes... ">
-                                          
+                                         
                                          <br>
-                                        
+                                         <fieldset data-role="collapsible" >
+                                          <legend>Symptoms </legend>
                                          <input list="symptoms" name="symptom 3" placeholder="symptom ">
                                          <datalist id="symptoms">
                                              <option value="Abnormal behaviour">
@@ -572,10 +602,9 @@
                                                  <option value="Few hours"> 
                                            </datalist>
                                            <input type="text" name="extra notes 3" placeholder="extra notes... ">
-                                          </fieldset>
+                                          
                                          
                                            <fieldset data-role="collapsible" >
-
                                           <legend>Symptoms</legend>
                                            <input list="symptoms" name="symptom 4" placeholder="symptom ">
                                                <datalist id="symptoms">
@@ -657,7 +686,7 @@
                                                  <option value="Weakness in limbs">
                                                  <option value="White discoloration of nails" >
                                                  <option value="Yellowish discoloration of skin">   
-                                      
+                                                
                                                </datalist>
 
                                             <input list="duration" name="duration4" placeholder="duration ">
@@ -744,7 +773,8 @@
                                              </datalist>
                                              <input type="text" name="extra notes 4" placeholder="extra notes... ">
                                           <br>
-                                          
+                                          <fieldset data-role="collapsible" >
+                                            <legend>Symptoms</legend>
                                           <input list="symptoms" name="symptom 5" placeholder="symptom ">
                                           <datalist id="symptoms">
                                               <option value="Abnormal behaviour">
@@ -911,7 +941,8 @@
                                             </datalist>
                                             <input type="text" name="extra notes 5" placeholder="extra notes... ">
                                             <br>
-                                           
+                                            <fieldset data-role="collapsible" >
+                                              <legend>Symptoms</legend>
                                             <input list="symptoms" name="symptom 6" placeholder="symptom ">
                                                 <datalist id="symptoms">
                                                   <option value="Abnormal behaviour">
@@ -1077,7 +1108,7 @@
                                                 <option value="Few hours"> 
                                               </datalist>
                                               <input type="text" name="extra notes 6" placeholder="extra notes... ">
-                                            </fieldset>
+                                            
                                            
                                            <fieldset data-role="collapsible" >
 
@@ -1248,7 +1279,9 @@
                                              </datalist>
                                              <input type="text" name="extra notes 7" placeholder="extra notes... ">
                                              <br>
-                                             
+                                             <fieldset data-role="collapsible" >
+
+                                              <legend>Symptoms</legend>
                                              <input list="symptoms" name="symptom 8" placeholder="symptom ">
                                                  <datalist id="symptoms">
                                                    <option value="Abnormal behaviour">
@@ -1415,7 +1448,9 @@
                                                </datalist>
                                                <input type="text" name="extra notes 8" placeholder="extra notes... ">
                                                <br>
-                                                       
+                                               <fieldset data-role="collapsible" >
+
+                                                <legend>Symptoms</legend>        
                                                <input list="symptoms" name="symptom 9" placeholder="symptom ">
                                            <datalist id="symptoms">
                                                <option value="Abnormal behaviour">
@@ -1582,7 +1617,9 @@
                                              </datalist>
                                              <input type="text" name="extra notes 9" placeholder="extra notes... ">
                                              <br>
-                                             
+                                             <fieldset data-role="collapsible" >
+
+                                              <legend>Symptoms</legend>
                                              <input list="symptoms" name="symptom 10" placeholder="symptom ">
                                                  <datalist id="symptoms">
                                                    <option value="Abnormal behaviour">
@@ -1748,20 +1785,36 @@
                                                  <option value="Few hours"> 
                                                </datalist>
                                                <input type="text" name="extra notes 10" placeholder="extra notes... "> 
+                                              </fieldset data-role="collapsible" >
+                                              </fieldset data-role="collapsible" >
+                                            </fieldset data-role="collapsible">
+                                          </fieldset data-role="collapsible">
+                                              </fieldset data-role="collapsible" >
+                                            </fieldset data-role="collapsible">
+                                          </fieldset data-role="collapsible">
+                                              </fieldset data-role="collapsible" >
+                                            </fieldset data-role="collapsible">
+                                          </fieldset data-role="collapsible">
+                                        </fieldset data-role="collapsible">
                                             
-                                              </fieldset>
-                                      
-                                             <br>
                                              
                                              <fieldset data-role="collapsible">
                                              <legend>Anthropometry and vitals</legend>
+                                             <br>
+                                              
+                                             <fieldset data-role="collapsible">
+                                              <legend>Anthropometry</legend>
                                              <input type="number" name="weight" placeholder="weight">
                                              <input type="number" name="height"placeholder="height">
                                              <input type="number" name="head circumference"placeholder="head circumference">
                                              <input type="number" name="mid-arm circumference" placeholder="mid-arm circumference ">
-                                             <input type="text" name="extra notes 11" placeholder="extra notes... "> 
+                                             <input type="text" name="extra notes 11" placeholder="extra notes... ">
+                                            </fieldset data-role="collapsible">
                                              <br>
-                                             <br>
+                                             
+                                             
+                                             <fieldset data-role="collapsible">
+                                              <legend>Vitals</legend>
                                              <input type="number" name="HR"placeholder="HR">
                                              <input type="number" name="RR"placeholder="RR">
                                              <input type="text" name="BP"placeholder="BP">
@@ -1778,10 +1831,17 @@
                                                       <option value="mottling">   
                                                       </datalist>
                                                   <input type="text" name="extra notes 12" placeholder="extra notes... ">
-                                                    </fieldset>    
+                                                </fieldset data-role="collapsible">
+                                                <br>
+                                               
+                                              </fieldset data-role="collapsible"> 
+                                              
+                                              
                                                   
                                                   <fieldset data-role="collapsible">
                                                     <legend>General physical examination</legend>
+                                                    <br>
+                                                
                                                   <input list="pallor" name="pallor"placeholder="pallor">
                                               <datalist id="pallor">
                                                 <option value="present">
@@ -1807,7 +1867,7 @@
                                       
                                       
                                               <br>
-                                              <br>
+                                              
                                              
                                                   <input list="lymphadenopathy" name="lymphadenopathy" placeholder="lymphadenopathy">
                                                     <datalist id="lymphadenopathy">
@@ -1852,8 +1912,11 @@
                                                                 <option value="fruncle present">
                                                                 </datalist>
                                                                 <input type="text" name="extra notes 14" placeholder="extra notes... ">  
+                                                                <br>
+                                                               
                                                               </fieldset> 
-                                                                
+
+                                                        
                                                                 
                                                                 <fieldset data-role="collapsible">
                                                                   <legend>Systemic examination</legend>
@@ -1894,7 +1957,7 @@
                                                      </datalist>  
                                                      <input type="text" name="extra notes 15" placeholder="extra notes... ">  
                                                     </fieldset>
-                                                     <br>
+                                                    
                                                      
                                       
                                       
@@ -2676,30 +2739,13 @@
                                             </fieldset>
                                               
                                               
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                              
-                                      
-                                      
-                                      
-                                                          <br>
-                                                          
-                                      
-                                      
-                                      
-                                      
-                                      
                                       
                                                           <fieldset data-role="collapsible">
                                       
                                                      <legend>Treatment</legend>
+                                                     <fieldset data-role="collapsible">
+                                      
+                                                      <legend>Treatment</legend>
                                                     <input list="medicines" name="medicine 1" placeholder="medicines..">
                                                         <datalist id="medicines">
                                                       <option value="Syp Augmentin Duo">
@@ -3039,7 +3085,9 @@
                                                     </datalist>
                                                     <input type="text" name="extra notes 16" placeholder="extra notes... ">  
                                                     <br>
-                                                    
+                                                    <fieldset data-role="collapsible">
+                                      
+                                                      <legend>Treatment</legend>
                                                       <input list="medicines" name="medicine 2" placeholder="medicines..">
                                                       <datalist id="medicines">
                                                         <option value="Syp Augmentin Duo">
@@ -3379,7 +3427,9 @@
                                                       </datalist>
                                                       <input type="text" name="extra notes 17" placeholder="extra notes... ">  
                                                       <br>
-                                                      
+                                                      <fieldset data-role="collapsible">
+                                      
+                                                        <legend>Treatment</legend>
                                                       <input list="medicines" name="medicine 3" placeholder="medicines..">
                                                       <datalist id="medicines">
                                                     <option value="Syp Augmentin Duo">
@@ -3712,7 +3762,7 @@
                                                     <option value="18 month">
                                                   </datalist>
                                                   <input type="text" name="extra notes 18" placeholder="extra notes... ">  
-                                                          </fieldset>
+                                                          
                                                   
                                                  <fieldset data-role="collapsible">
                                       
@@ -4064,7 +4114,9 @@
                                       
                                       
                                                     <br>
-                                                    
+                                                    <fieldset data-role="collapsible">
+                                      
+                                                     <legend>Treatment</legend>
                                                     <input list="medicines" name="medicine 5" placeholder="medicines..">
                                                     <datalist id="medicines">
                                                   <option value="Syp Augmentin Duo">
@@ -4404,7 +4456,9 @@
                                                 </datalist>
                                                 <input type="text" name="extra notes 20" placeholder="extra notes... ">  
                                                 <br>
-                                                
+                                                <fieldset data-role="collapsible">
+                                      
+                                                  <legend>Treatment</legend>
                                                   <input list="medicines" name="medicine 6" placeholder="medicines..">
                                                   <datalist id="medicines">
                                                     <option value="Syp Augmentin Duo">
@@ -4743,9 +4797,7 @@
                                                       <option value="18 month">
                                                   </datalist>
                                                   <input type="text" name="extra notes 21" placeholder="extra notes... "> 
-                                                 </fieldset> 
-                                                  
-                                                </fieldset>
+                                               
                                              
                                                <fieldset data-role="collapsible">
                                     
@@ -5008,6 +5060,9 @@
                                                 <option value="2 1/2 tab ">                     
                                               </datalist>
                                           
+                                              <fieldset data-role="collapsible">
+                                    
+                                                <legend>Treatment</legend>
                                               <input list="frequency" name="frequency 7" placeholder="frequency..">
                                         
                                               <datalist id="frequency">
@@ -5090,6 +5145,10 @@
                                               <input type="text" name="extra notes 22" placeholder="extra notes... ">  
                                               <br>
                                               <br>
+
+                                              <fieldset data-role="collapsible">
+                                    
+                                                <legend>Treatment</legend>
                                                 <input list="medicines" name="medicine 8" placeholder="medicines..">
                                                 <datalist id="medicines">
                                                   <option value="Syp Augmentin Duo">
@@ -5430,6 +5489,10 @@
                                                 <input type="text" name="extra notes 23" placeholder="extra notes... ">  
                                                 <br>
                                                 <br>
+
+                                               <fieldset data-role="collapsible">
+                                    
+                                                <legend>Treatment</legend>
                                                 <input list="medicines" name="medicine 9" placeholder="medicines..">
                                                 <datalist id="medicines">
                                               <option value="Syp Augmentin Duo">
@@ -5769,7 +5832,7 @@
                                               <option value="18 month">
                                             </datalist>
                                             <input type="text" name="extra notes 24" placeholder="extra notes... "> 
-                                               </fieldset>
+                                               
                                            
                                             
                                          <fieldset data-role="collapsible">
@@ -6120,7 +6183,9 @@
                                       
                                       
                                       
-                                      
+                                              <fieldset data-role="collapsible">
+                              
+                                                <legend>Treatment</legend>
                                               <input list="medicines" name="medicine 11" placeholder="medicines..">
                                               <datalist id="medicines">
                                             <option value="Syp Augmentin Duo">
@@ -6461,6 +6526,9 @@
                                           <input type="text" name="extra notes 26" placeholder="extra notes... ">  
                                           <br>
                                           <br>
+                                          <fieldset data-role="collapsible">
+                              
+                                            <legend>Treatment</legend>
                                             <input list="medicines" name="medicine 12" placeholder="medicines..">
                                             <datalist id="medicines">
                                               <option value="Syp Augmentin Duo">
@@ -6799,7 +6867,7 @@
                                                 <option value="18 month">
                                             </datalist>
                                             <input type="text" name="extra notes 27" placeholder="extra notes... ">  
-                                         </fieldset>
+                                         
                                             
                                             
                                             <fieldset data-role="collapsible">
@@ -7146,6 +7214,9 @@
                                         <input type="text" name="extra notes 28" placeholder="extra notes... "> 
                                         <br>
                                         <br>
+                                        <fieldset data-role="collapsible">
+                              
+                                          <legend>Treatment</legend>
                                           <input list="medicines" name="medicine 14" placeholder="medicines..">
                                           <datalist id="medicines">
                                             <option value="Syp Augmentin Duo">
@@ -7494,6 +7565,9 @@
                                       
                                           <br>
                                           <br>
+                                          <fieldset data-role="collapsible">
+                              
+                                            <legend>Treatment</legend>
                                           <input list="medicines" name="medicine 15" placeholder="medicines..">
                                           <datalist id="medicines">
                                         <option value="Syp Augmentin Duo">
@@ -7737,13 +7811,24 @@
                                       
                                       <input type="text" name="extra notes 30" placeholder="extra notes... "> 
                                       
-                                        </fieldset>
-                                      
-                                      
-                                      
-                                      
-                                      
-                                          <br>
+                                       </fieldset data-role="collapsible">
+                                      </fieldset data-role="collapsible">
+                                    </fieldset data-role="collapsible">
+                                  </fieldset data-role="collapsible">
+                                </fieldset data-role="collapsible">
+                              </fieldset data-role="collapsible">
+                            </fieldset data-role="collapsible">
+                          </fieldset data-role="collapsible">
+                        </fieldset data-role="collapsible">
+                      </fieldset data-role="collapsible">      
+                    </fieldset data-role="collapsible">
+                  </fieldset data-role="collapsible">
+                </fieldset data-role="collapsible">
+              </fieldset data-role="collapsible">
+            </fieldset data-role="collapsible">
+          </fieldset data-role="collapsible">
+        </fieldset data-role="collapsible">
+                               
                                           
                                           <fieldset data-role="collapsible">
                                           <h2>Vaccination</h2>
@@ -8056,9 +8141,11 @@
                                                           </datalist>      
                                                           </fieldset>       
                                             
-                                            <br>
+                                            
                                             <fieldset data-role="collapsible">
                                             <legend>Investigations</legend>
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 1" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -8179,7 +8266,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 2" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -8300,7 +8388,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 3" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -8421,7 +8510,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 4" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -8540,7 +8630,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 5" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -8661,7 +8752,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 6" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -8781,7 +8873,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 7" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -8901,7 +8994,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             
                                             <input list="investigations" name="investigations 8" placeholder="investigations..">
                                             <datalist id="investigations">
@@ -9021,7 +9115,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 9" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -9141,7 +9236,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             
                                             <input list="investigations" name="investigations 10" placeholder="investigations..">
                                             <datalist id="investigations">
@@ -9257,7 +9353,7 @@
                                               <option value="Chest X Ray">Chest X Ray</option>
                                               <option value="X ray abdomen erect">X ray abdomen erect</option>  
                                             </datalist>
-                                            </fieldset>
+                                         
                                       
                                       
                                       
@@ -9386,7 +9482,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 12" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -9506,7 +9603,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 13" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -9627,7 +9725,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 14" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -9746,7 +9845,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 15" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -9867,7 +9967,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 16" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -9987,7 +10088,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 17" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -10108,7 +10210,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 18" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -10226,7 +10329,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 19" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -10347,7 +10451,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 20" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -10462,8 +10567,7 @@
                                               <option value="Chest X Ray">Chest X Ray</option>
                                               <option value="X ray abdomen erect">X ray abdomen erect</option>  
                                             </datalist>
-                                            </fieldset>
-                                      
+                                           
                                       
                                       
                                             <fieldset data-role="collapsible">
@@ -10588,7 +10692,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 22" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -10706,7 +10811,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 23" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -10827,7 +10933,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 24" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -10945,7 +11052,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 25" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -11066,7 +11174,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 26" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -11184,7 +11293,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 27" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -11305,7 +11415,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 28" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -11423,7 +11534,8 @@
                                       
                                       
                                       
-                                      
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 29" placeholder="investigations..">
                                       
                                             <datalist id="investigations">
@@ -11544,7 +11656,8 @@
                                             
                                             
                                             
-                                            
+                                            <fieldset data-role="collapsible">
+                                              <legend>Investigations</legend>
                                             <input list="investigations" name="investigations 30" placeholder="investigations..">
                                             <datalist id="investigations">
                                               <option value="CBC">CBC</option>
@@ -11659,9 +11772,44 @@
                                               <option value="Chest X Ray">Chest X Ray</option>
                                               <option value="X ray abdomen erect">X ray abdomen erect</option>  
                                                </datalist>
-                                              </fieldset>
+                                              
+                                       </fieldset data-role="collapsible">
+                                      </fieldset data-role="collapsible">
+                                    </fieldset data-role="collapsible">
+                                  </fieldset data-role="collapsible">
+                                </fieldset data-role="collapsible">
+                              </fieldset data-role="collapsible">
+                            </fieldset data-role="collapsible">
+                          </fieldset data-role="collapsible">
+                        </fieldset data-role="collapsible">
+                      </fieldset data-role="collapsible">      
+                    </fieldset data-role="collapsible">
+                  </fieldset data-role="collapsible">
+                </fieldset data-role="collapsible">
+              </fieldset data-role="collapsible">
+            </fieldset data-role="collapsible">
+          </fieldset data-role="collapsible">
+        </fieldset data-role="collapsible">
+
+      </fieldset data-role="collapsible">
+    </fieldset data-role="collapsible">
+  </fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">      
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
+</fieldset data-role="collapsible">
                                       
-                                                  <br>
+                                                 
                                                   
                                                   <fieldset data-role="collapsible">
                                                   <legend>Follow-up date</legend>
@@ -11670,13 +11818,11 @@
                                                   <br>
                                                   
 
-                                                  <input type="submit" name="submit" class="btnSubmit" value="submit" />
+                                                  <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />              <br>
                                                   <br>
                                                   <br>
                                                   <br>
-                                                  <br>
-                                                 
-
+                                                  
                                                   
                                                 </form>
 
@@ -11685,10 +11831,12 @@
           <script async defer src="https://formfacade.com/include/118119416263679531187/form/1FAIpQLSf-15E3KabmMCzJYKipEavzfvCXQP-wdlS1qjsKWwWbyYWO7g/classic.js?div=ff-compose"></script>
           <br>
           <br>
-          <iframe width="1200" height="300" src="https://datastudio.google.com/embed/reporting/1c489b5e-d7e5-4fd3-8328-9c3fe066e1e1/page/W7qcB" frameborder="0" style="border:0" allowfullscreen></iframe>
+
           <br>
           <br>
-  <p>Thank you </p>
+          <a href="https://datastudio.google.com/u/0/reporting/1c489b5e-d7e5-4fd3-8328-9c3fe066e1e1/page/W7qcB" class="Submit">Click Here to see the print</a>
+
+ 
           <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbzq-7xe4_iAyJtSTis80CjXPx100O_8HPfZ8pTvdoXYIZzxlPo/exec'
             const form = document.forms['symptoms new']
